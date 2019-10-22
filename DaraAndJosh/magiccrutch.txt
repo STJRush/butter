@@ -1,0 +1,8 @@
+our basic idea is an automatic door that opens upstairs in the wheelchair toilet when a sensor on your crutch or wheelchair 
+comes within range of sensors on the wall, 
+
+as someone who is currently on crutches i find the door upstairs hard to open without droping my crutches, 
+i believe that our idea would be very useful,
+
+it would include sensors on your crutches and when you stand at a aparticular place upstairs with your crutches,
+we will have a line to tell u where to stand, you can press a button and the door opens for you.
