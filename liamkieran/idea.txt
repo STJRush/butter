@@ -1,1 +1,1 @@
-idea
+our idea is to have two microbits at the front door to detect if anyone is entering or leaving the buliding and how many 
