@@ -1,0 +1,9 @@
+Create a device that tells the temperature of each room in the school. There is a perfect temperature to study at (21-23°C). 
+Students love to complain about the room being too cold or too warm, and teachers do bloody nothing about it.
+"Hey sir, Its a bit chilly in here innit?"  "Ye but no"
+The device will tell whether it is too cold or too warm. 
+Our device will be in each room and will send regular readings to a website. Here we will be able have an overlay of the school and see which 
+rooms are too warm or too cold.
+
+This device will also tell students when leaving the room last class the temperature outisde. It will either tell them to wrap up and pop on a hat
+or to slap a bit of sun cream on and enjoy the sunny evening.
