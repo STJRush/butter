@@ -1,0 +1,3 @@
+Our basic idea is to have a rover or drone patrolling the school halls during class in between lunch and break to check for students
+that aren't in class.
+
