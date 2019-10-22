@@ -1,1 +1,1 @@
-We have a number of Ideas
+Our project idea is to make a sensor that when people leave the lunch room, it reminds them to pick up their rubbish. This will be useful because there are some people who don't bother to clean up after themselves
