@@ -1,1 +1,1 @@
-Our project idea is to make a sensor that when people leave the lunch room, it reminds them to pick up their rubbish. This will be useful because there are some people who don't bother to clean up after themselves and results in us being locked out of our lunchroom.
+Our project idea is to make a microbit rover , and it has a pan and brush on it , and when people leaving the lunch room , the rover will starts to work , and it will brush the rubbish items into the pan .
