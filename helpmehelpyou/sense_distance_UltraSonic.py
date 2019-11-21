@@ -2,6 +2,10 @@ import RPi.GPIO as GPIO
 import time
 GPIO.setmode(GPIO.BCM)
 import csv
+import os
+import subprocess
+from time import sleep
+import random
 
 TRIG = 23   #When we say TRIG, we mean 23. Makes the code easier to understand.
 ECHO = 24   #When we say ECHO, we mean 24. Makes the code easier to understand.
@@ -39,11 +43,60 @@ def distcheck():  #defines a neat function to gather up all the code needed for 
 
 
 ######## Start of program #########
+while True:
+    print(distcheck())                                #runs the function above
 
-print(distcheck())                                #runs the function above
 
+    if distcheck() <= 40 :
+        introNumber = random.randint(1, 9)
 
+        if introNumber==1:
+            sleep(2)
+            os.system('mplayer morgan.m4a&')
+            sleep(3)
+            
+        elif introNumber==2:
+            sleep(2)
+            os.system('mplayer raheem.m4a&')
+            sleep(3)
+            
+        elif introNumber==3:
+            sleep(2)
+            os.system('mplayer sadbh.m4a&')
+            sleep(3)
+            
+        elif introNumber==4:
+            sleep(2)
+            os.system('mplayer danielob.m4a&')
+            sleep(3)
+            
+        elif introNumber==5:
+            sleep(2)
+            os.system('mplayer raheem2.m4a&')
+            sleep(3)
+            
+        elif introNumber==6:
+            os.system('mplayer todd.m4a&')
+            sleep(4)
+            
+        elif introNumber==7:
+            os.system('mplayer mrohara.m4a&')
+            sleep(4)
+            
+        elif introNumber==8:
+            os.system('mplayer mrworrel.m4a&')
+            sleep(4)
 
+        elif introNumber==9:
+            os.system('mplayer mshayden.m4a&')
+            sleep(4)
+        
+                
+        
+        
+        
+        
+    #else distcheck == >40:
 
 
 GPIO.cleanup()                              #clears any GPIO pins that might have been left set to on.
