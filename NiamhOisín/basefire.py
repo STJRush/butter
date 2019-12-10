@@ -4,7 +4,7 @@ from firebase import firebase
 
 
 #API KEY
-firebase = firebase.FirebaseApplication('https://rpitempdata.firebaseio.com', None)
+firebase = firebase.FirebaseApplication('https://temperature-map-st-josephs.firebaseio.com', None)
 
 while True:
     humid, temp = DHT.read_retry(DHT.DHT11, 4)
