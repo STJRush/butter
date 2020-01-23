@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="https://d1ix0byejyn2u7.cloudfront.net/drive/images/uploads/headers/ws_cropper/1_0x0_790x520_0x520_euro_emissions_standards.jpg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	.button {
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	
+	
+	table {
+    font-family: monospace, verdana;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+td, th {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #808080;
+}
+	
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid black;
+  border-radius: 50%;
+   border-top: 16px solid #1f1f1f;
+ border-right: 16px solid red;
+ border-bottom: 16px solid yellow;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+	
+img{
+	postion: static;
+	}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+  <title>Co2 Emissions From Cars</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="icon" href="https://png.icons8.com/color/1600/germany.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		
+	
+	<style TYPE="text/css">
+		
+	img {
+		position: static;
+		}
+		
+.german-flag{
+	border-color: #ffffff;
+	border-style: solid;
+		}
+	  
+  img.round {
+    border: 2px solid white;
+    border-radius: 14px;
+    align: middle;
+    position: relative;
+    }
+  body {
+      font: 20px verdana, monospace;
+      line-height: 1.8;
+      color: #fcfcfc;
+	  background-color: black;
+  }
+ h3 {font-size: 30px
+		}
+  p {font-size: 20px;
+		font-family: verdana;
+		
+		}
+	  
+	  ul {font-size: 23px;
+	  text-align: center;
+		  font-style: italic;
+	font-family: san-serif;	  }
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #000000; /* black */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #ff0000; /* red */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffff00; /* yellow */
+      color: #000000;
+  }
+  .bg-4 { 
+      background-color: #ffff00; /* yellow */
+      color: #000000;
+  }
+		
+		.bg-5 { 
+      background-color: #000000; /* black */
+      color: #ffffff;
+  }
+		
+		.bg-6 { 
+      background-color: #ff0000; /* red */
+      color: #000000;
+  }
+		
+		.bg-7 { 
+      background-color: #ffff00  ; /* black */
+      color: #000000;
+  }
+		
+		
+		
+  .container-fluid {     
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      position: fixed;
+      width: 100%;
+      background-color: white;
+      
+  }
+		
+		
+  .navbar-nav  li a:hover {
+      color: #C6C6C6!important;
+	font-family: verdana;
+  }
+    
+		
+		
+a.nav-link:link{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: #fb3f00;
+   text-decoration: none;
+   font-family: verdana;
+}
+a.nav-link:hover
+{
+   color: #A0A0A0;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: #fb3f00;
+   text-decoration: none;
+	
+}
+		
+   a:link, a:visited, a:hover, a:active { color: #A0A0A0;
+       text-decoration: none; font-size: 22px; font-family: verdana;
+     }
+		
+  </style>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button> 
+      <a class="navbar-brand" href="https://stjrush.github.io/sitegerman.github.io/index.html">German</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://stjrush.github.io/sitegerman.github.io/index.html">HOME</a></li>
+        <li><a href="#resource">RESOURCES</a></li>
+	      <li><a href="#course">JC</a></li>
+	      <li><a href="#learning">LC</a></li>
+	      <li><a href="#teacher">TEACHER</a></li>
+      </ul> 
+  </div>
+</nav>
+
+
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">German</h3>
+
+
+	
+  <h3>What it's about:</h3>
+	<div class="german-flag">
+  <br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png
+  " class="img-responsive img-circle margin" style="display:inline" width="370" height="350" >
+	</div>
+	<p>
+  Junior Cycle German focuses on improving students knowledge on Germany and on learning the language, foods, cities and more will also be learned throughout the course.
+  </p>
+<p>Click <a href="https://www.examinations.ie/exammaterialarchive/?i=107.112.103.92.107">here </a>to see past Junior Cert Papers</p>	
+</div>
+
+
+
+
+<footer class="container-fluid bg-4 text-center">
+ <p>Created by:<br>Todd and Jessica
+</footer>
+		</div>
+
+	
+<button class="button"><span><a href="http://www.stjosephsrush.ie/">Click Me </a></span></button>
+
+</body>
+</html>
